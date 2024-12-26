@@ -24,9 +24,11 @@ namespace Ex02
             {
                 for (int j = 0; j < m_Size; j++)
                 {
-                    if ((i + j) % 2 == 1) // תאים שחורים בלבד
+                    // תאים שחורים בלבד (מחושבים לפי סכום השורה והעמודה)
+                    if ((i + j) % 2 == 1)
                     {
                         m_Board[i, j] = new CheckersPiece(PlayerType.Computer);
+                        Console.WriteLine($"DEBUG: Placed Computer piece at ({i}, {j})");
                     }
                 }
             }
@@ -36,14 +38,15 @@ namespace Ex02
             {
                 for (int j = 0; j < m_Size; j++)
                 {
-                    if ((i + j) % 2 == 1) // תאים שחורים בלבד
+                    // תאים שחורים בלבד (מחושבים לפי סכום השורה והעמודה)
+                    if ((i + j) % 2 == 1)
                     {
                         m_Board[i, j] = new CheckersPiece(PlayerType.Human);
+                        Console.WriteLine($"DEBUG: Placed Human piece at ({i}, {j})");
                     }
                 }
             }
         }
-
 
         public void DisplayBoard()
         {
@@ -53,8 +56,7 @@ namespace Ex02
                 Console.Write((char)('A' + col) + "   ");
             }
             Console.WriteLine();
-            Console.WriteLine(" " + new string('=' , ((int)Math.Round(m_Size * 4.125))));
-
+            Console.WriteLine(" " + new string('=', m_Size * 4));
 
             for (int i = 0; i < m_Size; i++)
             {
@@ -67,17 +69,57 @@ namespace Ex02
                     }
                     else if (m_Board[i, j].Owner == PlayerType.Human)
                     {
-                        Console.Write(m_Board[i, j].isKing ? " K" : " X "); // כלי שחקן אנושי
+                        Console.Write(m_Board[i, j].isKing ? " K " : " X "); // חייל אנושי
                     }
                     else
                     {
-                        Console.Write(m_Board[i, j].isKing ? " U" : " O "); // כלי שחקן מחשב
+                        Console.Write(m_Board[i, j].isKing ? " U " : " O "); // חייל מחשב
                     }
                     Console.Write('|');
                 }
-                Console.WriteLine("");
-                Console.WriteLine(" " + new string('=', ((int)Math.Round(m_Size * 4.125))));
+                Console.WriteLine();
+                Console.WriteLine(" " + new string('=', m_Size * 4));
             }
+        }
+        public void DisplayBoardDebug()
+        {
+            for (int i = 0; i < m_Size; i++)
+            {
+                for (int j = 0; j < m_Size; j++)
+                {
+                    var piece = m_Board[i, j];
+                    string content = piece == null ? "empty" : (piece.Owner == PlayerType.Human ? "Human" : "Computer");
+                    Console.Write($"({i},{j}): {content}  ");
+                }
+                Console.WriteLine();
+            }
+        }
+
+
+        // פונקציה שבודקת אם תא מסוים פנוי
+        public bool IsPositionEmpty(int row, int col)
+        {
+            return m_Board[row, col] == null;
+        }
+
+        // פונקציה שמחזירה את החייל שנמצא בתא מסוים
+        public CheckersPiece GetPieceAt(int row, int col)
+        {
+            Console.WriteLine($"DEBUG: Checking piece at ({row}, {col})");
+            return m_Board[row, col];
+        }
+
+
+        // פונקציה שמעדכנת את החייל בתא מסוים
+        public void SetPieceAt(int row, int col, CheckersPiece piece)
+        {
+            m_Board[row, col] = piece;
+        }
+
+        // פונקציה שמחזירה את גודל הלוח
+        public int GetSize()
+        {
+            return m_Size;
         }
 
     }

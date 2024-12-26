@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ex02
 {
-    internal class CheckersPiece
+    public class CheckersPiece
     {
         public PlayerType Owner { get; private set; }
         public bool isKing { get; private set; }
@@ -15,6 +15,10 @@ namespace Ex02
         {
             Owner = i_Owner;
             isKing = false;
+        }
+        public void PromoteToKing()
+        {
+            isKing = true;
         }
 
         public override string ToString()

@@ -6,3 +6,10 @@ C:\Users\Gallu\OneDrive\Desktop\מדעי המחשב\שנה ג\פיתוח אפל�
 C:\Users\Gallu\OneDrive\Desktop\מדעי המחשב\שנה ג\פיתוח אפליקציות C#\Ex_02\Ex02 Gal 209201631 Ofek 318740271\Ex02\obj\Debug\Ex02.csproj.CoreCompileInputs.cache
 C:\Users\Gallu\OneDrive\Desktop\מדעי המחשב\שנה ג\פיתוח אפליקציות C#\Ex_02\Ex02 Gal 209201631 Ofek 318740271\Ex02\obj\Debug\Ex02.exe
 C:\Users\Gallu\OneDrive\Desktop\מדעי המחשב\שנה ג\פיתוח אפליקציות C#\Ex_02\Ex02 Gal 209201631 Ofek 318740271\Ex02\obj\Debug\Ex02.pdb
+C:\Users\ofek9\OneDrive\שולחן העבודה\Ex02 Gal 209201631 Ofek 318740271\Ex02 Gal 209201631 Ofek 318740271\Ex02\bin\Debug\Ex02.exe.config
+C:\Users\ofek9\OneDrive\שולחן העבודה\Ex02 Gal 209201631 Ofek 318740271\Ex02 Gal 209201631 Ofek 318740271\Ex02\bin\Debug\Ex02.exe
+C:\Users\ofek9\OneDrive\שולחן העבודה\Ex02 Gal 209201631 Ofek 318740271\Ex02 Gal 209201631 Ofek 318740271\Ex02\bin\Debug\Ex02.pdb
+C:\Users\ofek9\OneDrive\שולחן העבודה\Ex02 Gal 209201631 Ofek 318740271\Ex02 Gal 209201631 Ofek 318740271\Ex02\obj\Debug\Ex02.csproj.AssemblyReference.cache
+C:\Users\ofek9\OneDrive\שולחן העבודה\Ex02 Gal 209201631 Ofek 318740271\Ex02 Gal 209201631 Ofek 318740271\Ex02\obj\Debug\Ex02.csproj.CoreCompileInputs.cache
+C:\Users\ofek9\OneDrive\שולחן העבודה\Ex02 Gal 209201631 Ofek 318740271\Ex02 Gal 209201631 Ofek 318740271\Ex02\obj\Debug\Ex02.exe
+C:\Users\ofek9\OneDrive\שולחן העבודה\Ex02 Gal 209201631 Ofek 318740271\Ex02 Gal 209201631 Ofek 318740271\Ex02\obj\Debug\Ex02.pdb
